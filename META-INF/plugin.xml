@@ -1,0 +1,51 @@
+<idea-plugin version="2">
+  <id>metaunit</id>
+  <name>MetaUnit</name>
+  <version>1.0</version>
+  <vendor email="pfu.mi@outlook.com">Michael Pfurtscheller</vendor>
+
+  <description><![CDATA[
+      The MetaUnit DSL allows to create JUnit tests
+      and suites with an easy to use syntax.
+    ]]></description>
+
+  <!--<change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>-->
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <depends>JUnit</depends>
+  <depends>jetbrains.mps.java</depends>
+  <depends>jetbrains.mps.core</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <facetType implementation="metaunit.facet.MUFacetType"/>
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <action id="metaunit.action.UpdateModelsAction" class="metaunit.action.UpdateModelsAction" text="Update Models"
+            description="Sets languages and test sources for MetaUnit" icon="/metaunit.png">
+      <add-to-group group-id="CutCopyPasteGroup" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
