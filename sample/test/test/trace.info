@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/1995360437442701643">
+    <file name="BlubTest.java">
+      <node id="1995360437442701897" at="13,31,14,27" concept="3" />
+      <node id="1995360437442702077" at="14,27,15,31" concept="3" />
+      <node id="1995360437442702796" at="15,31,16,45" concept="3" />
+      <node id="1995360437442701891" at="16,45,17,40" concept="3" />
+      <node id="1995360437442703471" at="17,40,18,71" concept="0" />
+      <node id="1995360437442701891" at="18,71,19,51" concept="3" />
+      <node id="1995360437442704269" at="19,51,20,88" concept="0" />
+      <node id="1995360437442701891" at="20,88,21,42" concept="3" />
+      <node id="1995360437442705039" at="21,42,22,71" concept="0" />
+      <node id="1995360437442701891" at="22,71,23,40" concept="3" />
+      <node id="1995360437442701891" at="23,40,24,39" concept="0" />
+      <node id="1995360437442701891" at="24,39,25,42" concept="3" />
+      <node id="1995360437442701891" at="25,42,26,34" concept="0" />
+      <node id="1995360437442710391" at="29,30,30,39" concept="0" />
+      <node id="1995360437442710391" at="28,0,32,0" concept="2" trace="testBlubBlub#()V" />
+      <node id="1995360437442701891" at="12,0,28,0" concept="2" trace="testBlubArray#()V" />
+      <scope id="1995360437442710391" at="29,30,30,39" />
+      <scope id="1995360437442710391" at="28,0,32,0" />
+      <scope id="1995360437442701891" at="13,31,26,34">
+        <var name="array" id="1995360437442702077" />
+        <var name="blub" id="1995360437442701897" />
+        <var name="doubleArray" id="1995360437442702796" />
+        <var name="result_a0a" id="1995360437442701891" />
+        <var name="result_b0a_0" id="1995360437442701891" />
+        <var name="result_c0a" id="1995360437442701891" />
+        <var name="result_d0a_0" id="1995360437442701891" />
+        <var name="result_e0a" id="1995360437442701891" />
+      </scope>
+      <scope id="1995360437442701891" at="12,0,28,0" />
+      <unit id="1995360437442701643" at="9,0,33,0" name="test.BlubTest" />
+    </file>
+  </root>
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/1995360437442711481">
+    <file name="Test.java">
+      <unit id="1995360437442711481" at="7,0,12,0" name="test.Test" />
+    </file>
+  </root>
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/1995360437442712117">
+    <file name="Suite.java">
+      <unit id="1995360437442712117" at="7,0,11,0" name="test.Suite" />
+    </file>
+  </root>
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/1995360437442712455">
+    <file name="AllSuite.java">
+      <unit id="1995360437442712455" at="8,0,12,0" name="test.AllSuite" />
+    </file>
+  </root>
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/9076072342829085537">
+    <file name="StackTest.java">
+      <node id="1995360437442591584" at="27,0,28,0" concept="1" trace="stack" />
+      <node id="9076072342829085537" at="29,41,30,42" concept="4" />
+      <node id="1995360437442591587" at="33,23,34,25" concept="0" />
+      <node id="1995360437442607105" at="34,25,35,16" concept="3" />
+      <node id="1995360437442607179" at="35,16,36,20" concept="0" />
+      <node id="1995360437442610497" at="39,26,40,17" concept="0" />
+      <node id="1995360437442610716" at="44,29,45,17" concept="3" />
+      <node id="1995360437442610744" at="45,17,46,34" concept="3" />
+      <node id="1995360437442610803" at="46,34,47,29" concept="3" />
+      <node id="1995360437442610639" at="47,29,48,25" concept="0" />
+      <node id="1995360437442610639" at="48,25,49,41" concept="3" />
+      <node id="1995360437442610639" at="49,41,50,35" concept="0" />
+      <node id="1995360437442610639" at="50,35,51,16" concept="0" />
+      <node id="1995360437442610639" at="51,16,52,41" concept="3" />
+      <node id="1995360437442666079" at="52,41,53,34" concept="0" />
+      <node id="1995360437442691158" at="56,26,57,47" concept="3" />
+      <node id="1995360437442691389" at="57,47,58,20" concept="0" />
+      <node id="1995360437442692052" at="58,20,59,20" concept="0" />
+      <node id="1995360437442688391" at="59,20,60,37" concept="3" />
+      <node id="1995360437442695823" at="60,37,61,67" concept="0" />
+      <node id="1995360437442688391" at="61,67,62,34" concept="3" />
+      <node id="1995360437442697593" at="62,34,63,39" concept="0" />
+      <node id="1995360437442684497" at="66,25,67,36" concept="3" />
+      <node id="1995360437442684497" at="67,36,68,37" concept="0" />
+      <node id="1995360437442684497" at="68,37,69,36" concept="3" />
+      <node id="1995360437442684497" at="69,36,70,34" concept="0" />
+      <node id="1995360437442684497" at="70,34,71,23" concept="0" />
+      <node id="1995360437442684497" at="71,23,72,36" concept="3" />
+      <node id="1995360437442686949" at="72,36,73,76" concept="0" />
+      <node id="1995360437442618286" at="77,26,78,21" concept="0" />
+      <node id="1995360437442664085" at="81,27,82,31" concept="3" />
+      <node id="1995360437442662705" at="82,31,83,26" concept="0" />
+      <node id="1995360437442662705" at="83,26,84,20" concept="0" />
+      <node id="1995360437442664664" at="87,27,88,20" concept="0" />
+      <node id="1995360437442664664" at="88,20,89,28" concept="0" />
+      <node id="1995360437442664664" at="89,28,90,36" concept="3" />
+      <node id="1995360437442682799" at="90,36,91,51" concept="0" />
+      <node id="1995360437442664664" at="91,51,92,36" concept="3" />
+      <node id="1995360437442684407" at="92,36,93,41" concept="0" />
+      <node id="1995360437442612668" at="96,26,97,34" concept="3" />
+      <node id="1995360437442613804" at="97,34,98,39" concept="0" />
+      <node id="1995360437442612668" at="98,39,99,18" concept="0" />
+      <node id="1995360437442612668" at="99,18,100,34" concept="3" />
+      <node id="1995360437442615833" at="100,34,101,42" concept="0" />
+      <node id="1995360437442612668" at="101,42,102,16" concept="0" />
+      <node id="1995360437442612668" at="102,16,103,34" concept="3" />
+      <node id="1995360437442617711" at="103,34,104,39" concept="0" />
+      <node id="9076072342829085537" at="23,0,25,0" concept="5" trace="timeoutClass" />
+      <node id="9076072342829085537" at="25,0,27,0" concept="1" trace="timeoutTests" />
+      <node id="9076072342829085537" at="28,0,32,0" concept="6" trace="cycles#()Ljava/util/List;" />
+      <node id="9076072342829085537" at="38,0,42,0" concept="2" trace="tearDown#()V" />
+      <node id="1995360437442618286" at="75,0,80,0" concept="2" trace="testPush#()V" />
+      <node id="9076072342829085537" at="32,0,38,0" concept="2" trace="setUp#()V" />
+      <node id="1995360437442662705" at="80,0,86,0" concept="2" trace="testPush1#()V" />
+      <node id="1995360437442664664" at="86,0,95,0" concept="2" trace="testPush2#()V" />
+      <node id="1995360437442688391" at="55,0,65,0" concept="2" trace="testPeek#()V" />
+      <node id="1995360437442684497" at="65,0,75,0" concept="2" trace="testPop#()V" />
+      <node id="1995360437442612668" at="95,0,106,0" concept="2" trace="testSize#()V" />
+      <node id="1995360437442610639" at="43,0,55,0" concept="2" trace="testIsEmpty#()V" />
+      <scope id="9076072342829085537" at="29,41,30,42" />
+      <scope id="9076072342829085537" at="39,26,40,17" />
+      <scope id="1995360437442618286" at="77,26,78,21" />
+      <scope id="9076072342829085537" at="33,23,36,20">
+        <var name="arg" id="1995360437442607105" />
+      </scope>
+      <scope id="1995360437442662705" at="81,27,84,20">
+        <var name="stack" id="1995360437442664085" />
+      </scope>
+      <scope id="9076072342829085537" at="28,0,32,0" />
+      <scope id="9076072342829085537" at="38,0,42,0" />
+      <scope id="1995360437442618286" at="75,0,80,0" />
+      <scope id="9076072342829085537" at="32,0,38,0" />
+      <scope id="1995360437442662705" at="80,0,86,0" />
+      <scope id="1995360437442664664" at="87,27,93,41">
+        <var name="result_c4a" id="1995360437442664664" />
+        <var name="result_d4a" id="1995360437442664664" />
+      </scope>
+      <scope id="1995360437442688391" at="56,26,63,39">
+        <var name="result_a6a" id="1995360437442688391" />
+        <var name="result_b6a" id="1995360437442688391" />
+        <var name="stack" id="1995360437442691158" />
+      </scope>
+      <scope id="1995360437442684497" at="66,25,73,76">
+        <var name="result_a5a" id="1995360437442684497" />
+        <var name="result_b5a" id="1995360437442684497" />
+        <var name="result_d5a" id="1995360437442684497" />
+      </scope>
+      <scope id="1995360437442612668" at="96,26,104,39">
+        <var name="result_a1a" id="1995360437442612668" />
+        <var name="result_c1a" id="1995360437442612668" />
+        <var name="result_e1a" id="1995360437442612668" />
+      </scope>
+      <scope id="1995360437442610639" at="44,29,53,34">
+        <var name="argument" id="1995360437442610803" />
+        <var name="result_b0a" id="1995360437442610639" />
+        <var name="result_d0a" id="1995360437442610639" />
+        <var name="size" id="1995360437442610716" />
+        <var name="stack" id="1995360437442610744" />
+      </scope>
+      <scope id="1995360437442664664" at="86,0,95,0" />
+      <scope id="1995360437442688391" at="55,0,65,0" />
+      <scope id="1995360437442684497" at="65,0,75,0" />
+      <scope id="1995360437442612668" at="95,0,106,0" />
+      <scope id="1995360437442610639" at="43,0,55,0" />
+      <unit id="9076072342829085537" at="20,0,107,0" name="test.StackTest" />
+    </file>
+  </root>
+</debug-info>
+
