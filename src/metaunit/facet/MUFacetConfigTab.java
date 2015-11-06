@@ -239,7 +239,7 @@ public class MUFacetConfigTab extends FacetEditorTab {
             FileUtil.createDirectory(testDirFile);
 
             LocalFileSystem fileSystem = LocalFileSystem.getInstance();
-            VirtualFile modulePath = model.getModule().getModuleFile().getParent();
+            VirtualFile modulePath = context.getModule().getModuleFile().getParent();
             model.addContentEntry(modulePath).addSourceFolder(fileSystem.refreshAndFindFileByIoFile(designDirFile), false);
             model.addContentEntry(modulePath).addSourceFolder(fileSystem.refreshAndFindFileByIoFile(testDirFile), true);
 
