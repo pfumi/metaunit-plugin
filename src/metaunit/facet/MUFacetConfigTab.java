@@ -9,10 +9,12 @@ import com.intellij.ide.util.BrowseFilesListener;
 import com.intellij.ide.util.PackageChooserDialog;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.application.ModalityState;
+import com.intellij.openapi.application.PathManager;
 import com.intellij.openapi.fileChooser.FileChooserDescriptor;
 import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory;
 import com.intellij.openapi.fileChooser.FileChooserFactory;
 import com.intellij.openapi.options.ConfigurationException;
+import com.intellij.openapi.projectRoots.ex.JavaSdkUtil;
 import com.intellij.openapi.roots.ModifiableRootModel;
 import com.intellij.openapi.roots.ModuleRootManager;
 import com.intellij.openapi.ui.Messages;
@@ -123,9 +125,9 @@ public class MUFacetConfigTab extends FacetEditorTab {
                         @Override
                         public void run() {
                             try {
-                                OrderEntryFix.addJUnit4Library(false, context.getModule());
+                                OrderEntryFix.addJarToRoots(PathManager.getJarPathForClass(Class.forName("org.junit.Test")), context.getModule(), null);
                             } catch (ClassNotFoundException e1) {
-                                System.err.println(e1.getMessage());
+                                throw new RuntimeException(e1);
                             }
                         }
                     }, ModalityState.NON_MODAL);
@@ -136,7 +138,7 @@ public class MUFacetConfigTab extends FacetEditorTab {
                     ApplicationManager.getApplication().invokeLater(new Runnable() {
                         @Override
                         public void run() {
-                            OrderEntryFix.addJarToRoots(com.intellij.openapi.projectRoots.ex.JavaSdkUtil.getJunit3JarPath(), context.getModule(), null);
+                            OrderEntryFix.addJarToRoots(JavaSdkUtil.getJunit3JarPath(), context.getModule(), null);
                         }
                     }, ModalityState.NON_MODAL);
                     junit4CheckBox.setEnabled(true);
