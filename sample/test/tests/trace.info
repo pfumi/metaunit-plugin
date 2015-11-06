@@ -7,7 +7,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/1995360437442701643">
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(tests)/1995360437442701643">
     <file name="BlubTest.java">
       <node id="1995360437442701897" at="13,31,14,27" concept="3" />
       <node id="1995360437442702077" at="14,27,15,31" concept="3" />
@@ -38,25 +38,25 @@
         <var name="result_e0a" id="1995360437442701891" />
       </scope>
       <scope id="1995360437442701891" at="12,0,28,0" />
-      <unit id="1995360437442701643" at="9,0,33,0" name="test.BlubTest" />
+      <unit id="1995360437442701643" at="9,0,33,0" name="tests.BlubTest" />
     </file>
   </root>
-  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/1995360437442711481">
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(tests)/1995360437442711481">
     <file name="Test.java">
-      <unit id="1995360437442711481" at="7,0,12,0" name="test.Test" />
+      <unit id="1995360437442711481" at="7,0,12,0" name="tests.Test" />
     </file>
   </root>
-  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/1995360437442712117">
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(tests)/1995360437442712117">
     <file name="Suite.java">
-      <unit id="1995360437442712117" at="7,0,11,0" name="test.Suite" />
+      <unit id="1995360437442712117" at="7,0,11,0" name="tests.Suite" />
     </file>
   </root>
-  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/1995360437442712455">
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(tests)/1995360437442712455">
     <file name="AllSuite.java">
-      <unit id="1995360437442712455" at="8,0,12,0" name="test.AllSuite" />
+      <unit id="1995360437442712455" at="8,0,12,0" name="tests.AllSuite" />
     </file>
   </root>
-  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(test)/9076072342829085537">
+  <root nodeRef="r:2e1dde5c-c44d-4e36-b946-814775e937e9(tests)/9076072342829085537">
     <file name="StackTest.java">
       <node id="1995360437442591584" at="27,0,28,0" concept="1" trace="stack" />
       <node id="9076072342829085537" at="29,41,30,42" concept="4" />
@@ -162,7 +162,7 @@
       <scope id="1995360437442684497" at="65,0,75,0" />
       <scope id="1995360437442612668" at="95,0,106,0" />
       <scope id="1995360437442610639" at="43,0,55,0" />
-      <unit id="9076072342829085537" at="20,0,107,0" name="test.StackTest" />
+      <unit id="9076072342829085537" at="20,0,107,0" name="tests.StackTest" />
     </file>
   </root>
 </debug-info>
