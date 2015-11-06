@@ -127,34 +127,34 @@ public class ParentFacetData {
         });
     }
 
-    public String debug() {
+    @SuppressWarnings("Debug models")
+    private String debug() {
         if (mpsFacet.getSolution() == null) {
-            return "null";
+            return null;
         }
-        StringBuilder builder = new StringBuilder("");
-        builder.append("--Model roots--");
+        String debug = "--Model roots--\n";
         System.out.println();
         for (ModelRoot root : mpsFacet.getSolution().getModelRoots()) {
-            builder.append("\nname: " + root.toString())
-                    .append("\npresentation: " + root.getPresentation())
-                    .append("\ntype: " + root.getType())
-                    .append("\n-SModels-");
+            debug += "name: " + root.toString();
+            debug += "\npresentation: " + root.getPresentation();
+            debug += "\ntype: " + root.getType();
+            debug += "\n-SModels-";
             for (SModel model : root.getModels()) {
-                builder.append("\nModel class: " + model.getClass().getName())
-                        .append("\nModel name: " + model.getModelName());
+                debug += "\nModel class: " + model.getClass().getName();
+                debug += "\nModel name: " + model.getModelName();
                 if (model instanceof DefaultSModelDescriptor) {
                     DefaultSModelDescriptor smodel = (DefaultSModelDescriptor) model;
-                    builder.append("\n---->Dependencies");
+                    debug += "\n---->Dependencies";
                     for (jetbrains.mps.smodel.SModel.ImportElement elem : smodel.importedModels()) {
-                        builder.append("\nmodel: " + elem.getModelReference().toString())
-                                .append("\nname: " + elem.getModelReference().getModelName())
-                                .append("\nid: " + elem.getModelReference().getModelId());
+                        debug += "\nmodel: " + elem.getModelReference().toString();
+                        debug += "\nname: " + elem.getModelReference().getModelName();
+                        debug += "\nid: " + elem.getModelReference().getModelId();
                     }
                 }
             }
-            builder.append("\n--------------------------");
+            debug += "\n--------------------------";
         }
-        builder.append("\n---------------------------------------------------");
-        return builder.toString();
+        debug += "\n---------------------------------------------------";
+        return debug;
     }
 }

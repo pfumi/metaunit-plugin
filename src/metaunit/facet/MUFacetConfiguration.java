@@ -9,7 +9,6 @@ import com.intellij.openapi.module.Module;
 import com.intellij.openapi.util.InvalidDataException;
 import com.intellij.openapi.util.WriteExternalException;
 import com.intellij.testIntegration.TestFramework;
-import com.intellij.util.PathUtil;
 import org.jdom.Element;
 import org.jetbrains.annotations.Nullable;
 
@@ -48,10 +47,10 @@ public class MUFacetConfiguration implements FacetConfiguration, PersistentState
 
     public void defaultValues() {
         if (config.testFolderPath == null) {
-            setTestFolderPath(PathUtil.getCanonicalPath(module.getProject().getBasePath()) + "/test");
+            setTestFolderPath(module.getModuleFile().getParent().getCanonicalPath() + "/test");
         }
         if (config.designFolderPath == null) {
-            setDesignFolderPath(PathUtil.getCanonicalPath(module.getProject().getBasePath()) + "/design");
+            setDesignFolderPath(module.getModuleFile().getParent().getCanonicalPath() + "/design");
         }
         if (junit3Framework == null || junit4Framework == null) {
             for (TestFramework testFramework : TestFramework.EXTENSION_NAME.getExtensions()) {
