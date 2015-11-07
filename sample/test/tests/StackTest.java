@@ -60,7 +60,7 @@ public class StackTest {
     Double result_a6a = stack.peek();
     Assert.assertEquals("Assure with delta", 1.0, result_a6a, 0.5);
     int result_b6a = stack.size();
-    Assert.assertEquals(5, result_b6a);
+    Assert.assertEquals(2, result_b6a);
   }
   @Test
   public void testPop() {
@@ -98,9 +98,9 @@ public class StackTest {
     Assert.assertEquals(1, result_a1a);
     stack.push(1);
     int result_c1a = stack.size();
-    Assert.assertNotEquals(2, result_c1a);
-    stack.pop();
+    Assert.assertNotEquals(1, result_c1a);
+    stack.push(2);
     int result_e1a = stack.size();
-    Assert.assertEquals(1, result_e1a);
+    Assert.assertEquals(3, result_e1a);
   }
 }
